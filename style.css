@@ -1,21 +1,81 @@
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 20px;
 }
 
+.textarea {
+    border: 1px solid #000000;
+    font-size: 30px;
+}
 .keyboard-container {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    row-gap: 10px;
+    background-color: rgb(82, 82, 82);
 }
 
 .keyboard-row {
     display: flex;
     justify-content: space-between;
-
+    column-gap: 10px;
 }
 
 .key {
-    color: red;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    line-height: 28px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.key:hover {
+    box-shadow:0 0 10px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.active {
+    box-shadow:0 0 10px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.Tab {
+    width: 50px;
+}
+
+.Enter, .ShiftRight {
+    width: 93px;
+}
+
+.ShiftLeft, .CapsLock {
+    width: 99px;
+}
+
+.Space {
+    width: 340px;
+}
+
+.key {
+    background-color: rgb(1, 208, 255);
+    transition: 0.3s;
+}
+
+.Backspace, .Tab, .Delete, .CapsLock, .Enter, .ShiftLeft, .ShiftRight, .ArrowUp, .ControlLeft, .MetaLeft, .AltLeft, .AltRight, .ArrowLeft, .ArrowDown, .ArrowRight, .ControlRight  {
+    background-color: rgb(204, 0, 255);
 }
