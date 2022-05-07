@@ -16,6 +16,13 @@
     border: 1px solid #000000;
     font-size: 30px;
 }
+
+.textarea:focus {
+    outline: none;
+    border-color: rgb(1, 208, 255);
+    box-shadow: 0 0 10px rgb(204, 0, 255);
+}
+
 .keyboard-container {
     border: 2px solid #000000;
     border-radius: 10px;
@@ -55,6 +62,10 @@
     color: rgb(255, 255, 255);
 }
 
+.animationClick {
+    transform: scale(0.9)
+}
+
 .Tab {
     width: 50px;
 }
@@ -73,7 +84,7 @@
 
 .key {
     background-color: rgb(1, 208, 255);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .Backspace, .Tab, .Delete, .CapsLock, .Enter, .ShiftLeft, .ShiftRight, .ArrowUp, .ControlLeft, .MetaLeft, .AltLeft, .AltRight, .ArrowLeft, .ArrowDown, .ArrowRight, .ControlRight  {

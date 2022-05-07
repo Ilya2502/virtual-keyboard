@@ -1,7 +1,7 @@
 export let keysArr = [[
   {
  "key": "`",
- "code": "Key`"
+ "code": "Backquote"
 },
   {
    "key": "1",
@@ -45,11 +45,11 @@ export let keysArr = [[
 },
   {
    "key": "-",
-   "code": "Key-"
+   "code": "Minus"
 },
   {
    "key": "=",
-   "code": "Key="
+   "code": "Equal"
 },
   {
    "key": "Backspace",
