@@ -1,262 +1,347 @@
 export let keysArr = [[
   {
  "key": "`",
- "code": "Backquote"
+ "code": "Backquote",
+ "pos": "pos00",
+ "shiftValueEn": "~"
 },
   {
    "key": "1",
-   "code": "Digit1"
+   "code": "Digit1",
+   "pos": "pos01",
+   "shiftValueEn": "!"
 },
   {
    "key": "2",
-   "code": "Digit2"
+   "code": "Digit2",
+   "pos": "pos02",
+   "shiftValueEn": "@"
 },
   {
    "key": "3",
-   "code": "Digit3"
+   "code": "Digit3",
+   "pos": "pos03",
+   "shiftValueEn": "#"
 },
   {
    "key": "4",
-   "code": "Digit4"
+   "code": "Digit4",
+   "pos": "pos04",
+   "shiftValueEn": "$"
 },
   {
    "key": "5",
-   "code": "Digit5"
+   "code": "Digit5",
+   "pos": "pos05",
+   "shiftValueEn": "%"
 },
   {
    "key": "6",
-   "code": "Digit6"
+   "code": "Digit6",
+   "pos": "pos06",
+   "shiftValueEn": "^"
 },
   {
    "key": "7",
-   "code": "Digit7"
+   "code": "Digit7",
+   "pos": "pos07",
+   "shiftValueEn": "&amp;"
 },
   {
    "key": "8",
-   "code": "Digit8"
+   "code": "Digit8",
+   "pos": "pos08",
+   "shiftValueEn": "*"
 },
   {
    "key": "9",
-   "code": "Digit9"
+   "code": "Digit9",
+   "pos": "pos09",
+   "shiftValueEn": "("
 },
   {
    "key": "0",
-   "code": "Digit0"
+   "code": "Digit0",
+   "pos": "pos010",
+   "shiftValueEn": ")"
 },
   {
    "key": "-",
-   "code": "Minus"
+   "code": "Minus",
+   "pos": "pos011",
+   "shiftValueEn": "_"
 },
   {
    "key": "=",
-   "code": "Equal"
+   "code": "Equal",
+   "pos": "pos012",
+   "shiftValueEn": "+"
 },
   {
    "key": "Backspace",
-   "code": "Backspace"
+   "code": "Backspace",
+   "pos": "pos013"
 }],
 [
   {
  "key": "Tab",
- "code": "Tab"
+ "code": "Tab",
+ "pos": "pos10"
 },
   {
    "key": "q",
-   "code": "KeyQ"
+   "code": "KeyQ",
+   "pos": "pos11"
 },
   {
    "key": "w",
-   "code": "KeyW"
+   "code": "KeyW",
+   "pos": "pos12"
 },
   {
    "key": "e",
-   "code": "KeyE"
+   "code": "KeyE",
+   "pos": "pos13"
 },
   {
    "key": "r",
-   "code": "KeyR"
+   "code": "KeyR",
+   "pos": "pos14"
 },
   {
    "key": "t",
-   "code": "KeyT"
+   "code": "KeyT",
+   "pos": "pos15"
 },
   {
    "key": "y",
-   "code": "KeyY"
+   "code": "KeyY",
+   "pos": "pos16"
 },
   {
    "key": "u",
-   "code": "KeyU"
+   "code": "KeyU",
+   "pos": "pos17"
 },
   {
    "key": "i",
-   "code": "KeyI"
+   "code": "KeyI",
+   "pos": "pos18"
 },
   {
    "key": "o",
-   "code": "KeyO"
+   "code": "KeyO",
+   "pos": "pos19"
 },
   {
    "key": "p",
-   "code": "KeyP"
+   "code": "KeyP",
+   "pos": "pos110"
 },
   {
    "key": "[",
-   "code": "BracketLeft"
+   "code": "BracketLeft",
+   "pos": "pos111",
+   "shiftValueEn": "{"
 },
   {
    "key": "]",
-   "code": "BracketRight"
+   "code": "BracketRight",
+   "pos": "pos112",
+   "shiftValueEn": "}"
 },
   {
    "key": "\\",
-   "code": "Backslash"
+   "code": "Backslash",
+   "pos": "pos113",
+   "shiftValueEn": "|"
 },
   {
    "key": "Del",
-   "code": "Delete"
+   "code": "Delete",
+   "pos": "pos114"
 }],
 [
   {
  "key": "CapsLock",
- "code": "CapsLock"
+ "code": "CapsLock",
+ "pos": "pos20"
 },
   {
    "key": "a",
-   "code": "KeyA"
+   "code": "KeyA",
+   "pos": "pos21"
 },
   {
    "key": "s",
-   "code": "KeyS"
+   "code": "KeyS",
+   "pos": "pos22"
 },
   {
    "key": "d",
-   "code": "KeyD"
+   "code": "KeyD",
+   "pos": "pos23"
 },
   {
    "key": "f",
-   "code": "KeyF"
+   "code": "KeyF",
+   "pos": "pos24"
 },
   {
    "key": "g",
-   "code": "KeyG"
+   "code": "KeyG",
+   "pos": "pos25"
 },
   {
    "key": "h",
-   "code": "KeyH"
+   "code": "KeyH",
+   "pos": "pos26"
 },
   {
    "key": "j",
-   "code": "KeyJ"
+   "code": "KeyJ",
+   "pos": "pos27"
 },
   {
    "key": "k",
-   "code": "KeyK"
+   "code": "KeyK",
+   "pos": "pos28"
 },
   {
    "key": "l",
-   "code": "KeyL"
+   "code": "KeyL",
+   "pos": "pos29"
 },
   {
    "key": ";",
-   "code": "Semicolon"
+   "code": "Semicolon",
+   "pos": "pos210",
+   "shiftValueEn": ":"
 },
   {
    "key": "'",
-   "code": "Quote"
+   "code": "Quote",
+   "pos": "pos211",
+   "shiftValueEn": "\""
 },
   {
    "key": "Enter",
-   "code": "Enter"
+   "code": "Enter",
+   "pos": "pos212"
 }],
 [
   {
  "key": "Shift",
- "code": "ShiftLeft"
+ "code": "ShiftLeft",
+ "pos": "pos30"
 },
   {
    "key": "z",
-   "code": "KeyZ"
+   "code": "KeyZ",
+   "pos": "pos31"
 },
   {
    "key": "x",
-   "code": "KeyX"
+   "code": "KeyX",
+   "pos": "pos32"
 },
   {
    "key": "c",
-   "code": "KeyC"
+   "code": "KeyC",
+   "pos": "pos33"
 },
   {
    "key": "v",
-   "code": "KeyV"
+   "code": "KeyV",
+   "pos": "pos34"
 },
   {
    "key": "b",
-   "code": "KeyB"
+   "code": "KeyB",
+   "pos": "pos35"
 },
   {
    "key": "n",
-   "code": "KeyN"
+   "code": "KeyN",
+   "pos": "pos36"
 },
   {
    "key": "m",
-   "code": "KeyM"
+   "code": "KeyM",
+   "pos": "pos37"
 },
   {
    "key": ",",
-   "code": "Comma"
+   "code": "Comma",
+   "pos": "pos38",
+   "shiftValueEn": "<"
 },
   {
    "key": ".",
-   "code": "Period"
+   "code": "Period",
+   "pos": "pos39",
+   "shiftValueEn": ">"
 },
   {
    "key": "/",
-   "code": "Slash"
+   "code": "Slash",
+   "pos": "pos310",
+   "shiftValueEn": "?"
 },
   {
    "key": "&#9650",
-   "code": "ArrowUp"
+   "code": "ArrowUp",
+   "pos": "pos311"
 },
   {
    "key": "Shift",
-   "code": "ShiftRight"
+   "code": "ShiftRight",
+   "pos": "pos312"
 }],
 [
   {
  "key": "Ctrl",
- "code": "ControlLeft"
+ "code": "ControlLeft",
+ "pos": "pos40"
 },
   {
    "key": "Win",
-   "code": "MetaLeft"
+   "code": "MetaLeft",
+   "pos": "pos41"
 },
   {
    "key": "Alt",
-   "code": "AltLeft"
+   "code": "AltLeft",
+   "pos": "pos42"
 },
   {
    "key": " ",
-   "code": "Space"
+   "code": "Space",
+   "pos": "pos43"
 },
   {
    "key": "Alt",
-   "code": "AltRight"
+   "code": "AltRight",
+   "pos": "pos44"
 },
   {
    "key": "&#9664",
-   "code": "ArrowLeft"
+   "code": "ArrowLeft",
+   "pos": "pos45"
 },
   {
    "key": "&#9660",
-   "code": "ArrowDown"
+   "code": "ArrowDown",
+   "pos": "pos46"
 },
   {
    "key": "&#9654",
-   "code": "ArrowRight"
+   "code": "ArrowRight",
+   "pos": "pos47"
 },
   {
    "key": "Ctrl",
-   "code": "ControlRight"
+   "code": "ControlRight",
+   "pos": "pos48"
 }]
 ]

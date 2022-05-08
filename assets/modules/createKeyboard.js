@@ -23,7 +23,7 @@ export function createKeyboard() {
         keyboardContainer.append(keyboardRow);
         for (let j = 0; j < keysArr[i].length; j++) {
             let key = document.createElement('div');
-            key.className = `key keyInner ${keysArr[i][j].code}`;
+            key.className = `${keysArr[i][j].pos} key keyInner ${keysArr[i][j].code}`;
             key.id = keysArr[i][j].code;
             key.innerHTML = keysArr[i][j].key;
             keyboardRow.append(key);
