@@ -351,6 +351,7 @@ export default [[
   },
   {
     key: '&#9650',
+    keyRu: '&#9650',
     code: 'ArrowUp',
     pos: 'pos311',
   },
@@ -388,16 +389,19 @@ export default [[
   },
   {
     key: '&#9668',
+    keyRu: '&#9668',
     code: 'ArrowLeft',
     pos: 'pos45',
   },
   {
     key: '&#9660',
+    keyRu: '&#9660',
     code: 'ArrowDown',
     pos: 'pos46',
   },
   {
     key: '&#9658',
+    keyRu: '&#9658',
     code: 'ArrowRight',
     pos: 'pos47',
   },
