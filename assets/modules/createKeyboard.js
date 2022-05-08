@@ -39,6 +39,6 @@ export default function createKeyboard() {
   h3Lang.innerHTML = 'Для переключения языка комбинация: левыe ctrl + alt';
   document.body.append(h3Lang);
 
-  const keyNotInner = document.querySelectorAll('.Backspace, .Tab, .Delete, .CapsLock, .Enter, .ShiftLeft, .ShiftRight, .ArrowUp, .ControlLeft, .MetaLeft, .AltLeft, .AltRight, .ArrowLeft, .ArrowDown, .ArrowRight, .ControlRight');
+  const keyNotInner = document.querySelectorAll('.Backspace, .Tab, .Delete, .CapsLock, .Enter, .ShiftLeft, .ShiftRight, .ControlLeft, .MetaLeft, .AltLeft, .AltRight, .ControlRight');
   keyNotInner.forEach((item) => item.classList.remove('keyInner'));
 }

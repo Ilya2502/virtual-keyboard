@@ -14,8 +14,8 @@ const enterKey = document.querySelector('.Enter');
 const delKey = document.querySelector('.Delete');
 const tabKey = document.querySelector('.Tab');
 const capsLockKey = document.querySelector('.CapsLock');
-const arrowLeft = document.querySelector('.ArrowLeft');
-const arrowRight = document.querySelector('.ArrowRight');
+// const arrowLeft = document.querySelector('.ArrowLeft');
+// const arrowRight = document.querySelector('.ArrowRight');
 const shiftKeyLeft = document.querySelector('.ShiftLeft');
 const shiftKeyRight = document.querySelector('.ShiftRight');
 const ctrlKeyLeft = document.querySelector('.ControlLeft');
@@ -26,7 +26,8 @@ const altKeyLeft = document.querySelector('.AltLeft');
 
 function moveCursorLeft() {
   textArea.focus();
-  if (textaeraCursorStart > 0 && textaeraCursorEnd > 0) {
+  textaeraCursorEnd = textaeraCursorStart;
+  if (textaeraCursorStart > 0) {
     textaeraCursorStart -= 1;
     textaeraCursorEnd -= 1;
     textArea.setSelectionRange(textaeraCursorStart, textaeraCursorEnd);
@@ -35,6 +36,7 @@ function moveCursorLeft() {
 
 function moveCursorRight() {
   textArea.focus();
+  textaeraCursorEnd = textaeraCursorStart;
   if (textaeraCursorStart < textArea.value.length && textaeraCursorStart < textArea.value.length) {
     textaeraCursorStart += 1;
     textaeraCursorEnd += 1;
@@ -67,10 +69,27 @@ function addClickKeyInner(event) {
   event.target.classList.remove('animationClick');
 }
 
+function del() {
+  textArea.focus();
+  if (textaeraCursorStart === textaeraCursorEnd) {
+    textArea.value = textArea.value.slice(0, textaeraCursorStart)
+                  + textArea.value.slice(textaeraCursorEnd + 1);
+  } else {
+    textArea.value = textArea.value.slice(0, textaeraCursorStart)
+                  + textArea.value.slice(textaeraCursorEnd);
+    textaeraCursorEnd = textaeraCursorStart;
+  }
+  textArea.setSelectionRange(textaeraCursorStart, textaeraCursorEnd);
+}
+
 function backspace() {
-  textArea.value = textArea.value.slice(0, textaeraCursorStart - 1)
-                    + textArea.value.slice(textaeraCursorStart);
-  moveCursorLeft();
+  if (textaeraCursorStart === textaeraCursorEnd) {
+    textArea.value = textArea.value.slice(0, textaeraCursorStart - 1)
+                    + textArea.value.slice(textaeraCursorEnd);
+    moveCursorLeft();
+  } else {
+    del();
+  }
 }
 
 function enter() {
@@ -186,12 +205,6 @@ function addKeyDownInner(event) {
   } else if (activeKey.id === 'Enter') {
     event.preventDefault();
     enter();
-  } else if (activeKey.id === 'ArrowLeft') {
-    event.preventDefault();
-    moveCursorLeft();
-  } else if (activeKey.id === 'ArrowRight') {
-    event.preventDefault();
-    moveCursorRight();
   } else if (event.key === 'Shift') {
     event.preventDefault();
     shiftOn();
@@ -233,13 +246,6 @@ function addCursorPosition() {
   textArea.setSelectionRange(textaeraCursorStart, textaeraCursorEnd);
 }
 
-function del() {
-  textArea.focus();
-  textArea.value = textArea.value.slice(0, textaeraCursorStart)
-                  + textArea.value.slice(textaeraCursorStart + 1);
-  textArea.setSelectionRange(textaeraCursorStart, textaeraCursorEnd);
-}
-
 backspaceKey.addEventListener('click', backspace);
 enterKey.addEventListener('click', enter);
 delKey.addEventListener('click', del);
@@ -259,8 +265,8 @@ shiftKeyLeft.addEventListener('mousedown', shiftOn);
 shiftKeyLeft.addEventListener('mouseup', shiftOff);
 shiftKeyRight.addEventListener('mousedown', shiftOn);
 shiftKeyRight.addEventListener('mouseup', shiftOff);
-arrowLeft.addEventListener('click', moveCursorLeft);
-arrowRight.addEventListener('click', moveCursorRight);
+// arrowLeft.addEventListener('click', moveCursorLeft);
+// arrowRight.addEventListener('click', moveCursorRight);
 
 // -------------------------------------------------------------- //
 

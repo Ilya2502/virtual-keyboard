@@ -387,7 +387,7 @@ export default [[
     pos: 'pos44',
   },
   {
-    key: '&#9664',
+    key: '&#9668',
     code: 'ArrowLeft',
     pos: 'pos45',
   },
@@ -397,7 +397,7 @@ export default [[
     pos: 'pos46',
   },
   {
-    key: '&#9654',
+    key: '&#9658',
     code: 'ArrowRight',
     pos: 'pos47',
   },
