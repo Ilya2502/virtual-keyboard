@@ -1,347 +1,409 @@
-export let keysArr = [[
+export default [[
   {
- "key": "`",
- "code": "Backquote",
- "pos": "pos00",
- "shiftValueEn": "~"
-},
+    key: '`',
+    keyRu: 'ё',
+    code: 'Backquote',
+    pos: 'pos00',
+    shiftValueEn: '~',
+  },
   {
-   "key": "1",
-   "code": "Digit1",
-   "pos": "pos01",
-   "shiftValueEn": "!"
-},
+    key: '1',
+    keyRu: '1',
+    code: 'Digit1',
+    pos: 'pos01',
+    shiftValueEn: '!',
+    shiftValueRu: '!',
+  },
   {
-   "key": "2",
-   "code": "Digit2",
-   "pos": "pos02",
-   "shiftValueEn": "@"
-},
+    key: '2',
+    keyRu: '2',
+    code: 'Digit2',
+    pos: 'pos02',
+    shiftValueEn: '@',
+    shiftValueRu: '"',
+  },
   {
-   "key": "3",
-   "code": "Digit3",
-   "pos": "pos03",
-   "shiftValueEn": "#"
-},
+    key: '3',
+    keyRu: '3',
+    code: 'Digit3',
+    pos: 'pos03',
+    shiftValueEn: '#',
+    shiftValueRu: '№',
+  },
   {
-   "key": "4",
-   "code": "Digit4",
-   "pos": "pos04",
-   "shiftValueEn": "$"
-},
+    key: '4',
+    keyRu: '4',
+    code: 'Digit4',
+    pos: 'pos04',
+    shiftValueEn: '$',
+    shiftValueRu: ';',
+  },
   {
-   "key": "5",
-   "code": "Digit5",
-   "pos": "pos05",
-   "shiftValueEn": "%"
-},
+    key: '5',
+    keyRu: '5',
+    code: 'Digit5',
+    pos: 'pos05',
+    shiftValueEn: '%',
+    shiftValueRu: '%',
+  },
   {
-   "key": "6",
-   "code": "Digit6",
-   "pos": "pos06",
-   "shiftValueEn": "^"
-},
+    key: '6',
+    keyRu: '6',
+    code: 'Digit6',
+    pos: 'pos06',
+    shiftValueEn: '^',
+    shiftValueRu: ':',
+  },
   {
-   "key": "7",
-   "code": "Digit7",
-   "pos": "pos07",
-   "shiftValueEn": "&amp;"
-},
+    key: '7',
+    keyRu: '7',
+    code: 'Digit7',
+    pos: 'pos07',
+    shiftValueEn: '&amp;',
+    shiftValueRu: '?',
+  },
   {
-   "key": "8",
-   "code": "Digit8",
-   "pos": "pos08",
-   "shiftValueEn": "*"
-},
+    key: '8',
+    keyRu: '8',
+    code: 'Digit8',
+    pos: 'pos08',
+    shiftValueEn: '*',
+    shiftValueRu: '*',
+  },
   {
-   "key": "9",
-   "code": "Digit9",
-   "pos": "pos09",
-   "shiftValueEn": "("
-},
+    key: '9',
+    keyRu: '9',
+    code: 'Digit9',
+    pos: 'pos09',
+    shiftValueEn: '(',
+    shiftValueRu: '(',
+  },
   {
-   "key": "0",
-   "code": "Digit0",
-   "pos": "pos010",
-   "shiftValueEn": ")"
-},
+    key: '0',
+    keyRu: '0',
+    code: 'Digit0',
+    pos: 'pos010',
+    shiftValueEn: ')',
+    shiftValueRu: ')',
+  },
   {
-   "key": "-",
-   "code": "Minus",
-   "pos": "pos011",
-   "shiftValueEn": "_"
-},
+    key: '-',
+    keyRu: '-',
+    code: 'Minus',
+    pos: 'pos011',
+    shiftValueEn: '_',
+    shiftValueRu: '_',
+  },
   {
-   "key": "=",
-   "code": "Equal",
-   "pos": "pos012",
-   "shiftValueEn": "+"
-},
+    key: '=',
+    keyRu: '=',
+    code: 'Equal',
+    pos: 'pos012',
+    shiftValueEn: '+',
+    shiftValueRu: '+',
+  },
   {
-   "key": "Backspace",
-   "code": "Backspace",
-   "pos": "pos013"
-}],
+    key: 'Backspace',
+    code: 'Backspace',
+    pos: 'pos013',
+  }],
 [
   {
- "key": "Tab",
- "code": "Tab",
- "pos": "pos10"
-},
+    key: 'Tab',
+    code: 'Tab',
+    pos: 'pos10',
+  },
   {
-   "key": "q",
-   "code": "KeyQ",
-   "pos": "pos11"
-},
+    key: 'q',
+    keyRu: 'й',
+    code: 'KeyQ',
+    pos: 'pos11',
+  },
   {
-   "key": "w",
-   "code": "KeyW",
-   "pos": "pos12"
-},
+    key: 'w',
+    keyRu: 'ц',
+    code: 'KeyW',
+    pos: 'pos12',
+  },
   {
-   "key": "e",
-   "code": "KeyE",
-   "pos": "pos13"
-},
+    key: 'e',
+    keyRu: 'у',
+    code: 'KeyE',
+    pos: 'pos13',
+  },
   {
-   "key": "r",
-   "code": "KeyR",
-   "pos": "pos14"
-},
+    key: 'r',
+    keyRu: 'к',
+    code: 'KeyR',
+    pos: 'pos14',
+  },
   {
-   "key": "t",
-   "code": "KeyT",
-   "pos": "pos15"
-},
+    key: 't',
+    keyRu: 'е',
+    code: 'KeyT',
+    pos: 'pos15',
+  },
   {
-   "key": "y",
-   "code": "KeyY",
-   "pos": "pos16"
-},
+    key: 'y',
+    keyRu: 'н',
+    code: 'KeyY',
+    pos: 'pos16',
+  },
   {
-   "key": "u",
-   "code": "KeyU",
-   "pos": "pos17"
-},
+    key: 'u',
+    keyRu: 'г',
+    code: 'KeyU',
+    pos: 'pos17',
+  },
   {
-   "key": "i",
-   "code": "KeyI",
-   "pos": "pos18"
-},
+    key: 'i',
+    keyRu: 'ш',
+    code: 'KeyI',
+    pos: 'pos18',
+  },
   {
-   "key": "o",
-   "code": "KeyO",
-   "pos": "pos19"
-},
+    key: 'o',
+    keyRu: 'щ',
+    code: 'KeyO',
+    pos: 'pos19',
+  },
   {
-   "key": "p",
-   "code": "KeyP",
-   "pos": "pos110"
-},
+    key: 'p',
+    keyRu: 'з',
+    code: 'KeyP',
+    pos: 'pos110',
+  },
   {
-   "key": "[",
-   "code": "BracketLeft",
-   "pos": "pos111",
-   "shiftValueEn": "{"
-},
+    key: '[',
+    keyRu: 'х',
+    code: 'BracketLeft',
+    pos: 'pos111',
+    shiftValueEn: '{',
+  },
   {
-   "key": "]",
-   "code": "BracketRight",
-   "pos": "pos112",
-   "shiftValueEn": "}"
-},
+    key: ']',
+    keyRu: 'ъ',
+    code: 'BracketRight',
+    pos: 'pos112',
+    shiftValueEn: '}',
+  },
   {
-   "key": "\\",
-   "code": "Backslash",
-   "pos": "pos113",
-   "shiftValueEn": "|"
-},
+    key: '\\',
+    keyRu: '\\',
+    code: 'Backslash',
+    pos: 'pos113',
+    shiftValueEn: '|',
+    shiftValueRu: '/',
+  },
   {
-   "key": "Del",
-   "code": "Delete",
-   "pos": "pos114"
-}],
+    key: 'Del',
+    code: 'Delete',
+    pos: 'pos114',
+  }],
 [
   {
- "key": "CapsLock",
- "code": "CapsLock",
- "pos": "pos20"
-},
+    key: 'CapsLock',
+    code: 'CapsLock',
+    pos: 'pos20',
+  },
   {
-   "key": "a",
-   "code": "KeyA",
-   "pos": "pos21"
-},
+    key: 'a',
+    keyRu: 'ф',
+    code: 'KeyA',
+    pos: 'pos21',
+  },
   {
-   "key": "s",
-   "code": "KeyS",
-   "pos": "pos22"
-},
+    key: 's',
+    keyRu: 'ы',
+    code: 'KeyS',
+    pos: 'pos22',
+  },
   {
-   "key": "d",
-   "code": "KeyD",
-   "pos": "pos23"
-},
+    key: 'd',
+    keyRu: 'в',
+    code: 'KeyD',
+    pos: 'pos23',
+  },
   {
-   "key": "f",
-   "code": "KeyF",
-   "pos": "pos24"
-},
+    key: 'f',
+    keyRu: 'а',
+    code: 'KeyF',
+    pos: 'pos24',
+  },
   {
-   "key": "g",
-   "code": "KeyG",
-   "pos": "pos25"
-},
+    key: 'g',
+    keyRu: 'п',
+    code: 'KeyG',
+    pos: 'pos25',
+  },
   {
-   "key": "h",
-   "code": "KeyH",
-   "pos": "pos26"
-},
+    key: 'h',
+    keyRu: 'р',
+    code: 'KeyH',
+    pos: 'pos26',
+  },
   {
-   "key": "j",
-   "code": "KeyJ",
-   "pos": "pos27"
-},
+    key: 'j',
+    keyRu: 'о',
+    code: 'KeyJ',
+    pos: 'pos27',
+  },
   {
-   "key": "k",
-   "code": "KeyK",
-   "pos": "pos28"
-},
+    key: 'k',
+    keyRu: 'л',
+    code: 'KeyK',
+    pos: 'pos28',
+  },
   {
-   "key": "l",
-   "code": "KeyL",
-   "pos": "pos29"
-},
+    key: 'l',
+    keyRu: 'д',
+    code: 'KeyL',
+    pos: 'pos29',
+  },
   {
-   "key": ";",
-   "code": "Semicolon",
-   "pos": "pos210",
-   "shiftValueEn": ":"
-},
+    key: ';',
+    keyRu: 'ж',
+    code: 'Semicolon',
+    pos: 'pos210',
+    shiftValueEn: ':',
+  },
   {
-   "key": "'",
-   "code": "Quote",
-   "pos": "pos211",
-   "shiftValueEn": "\""
-},
+    key: "'",
+    keyRu: 'э',
+    code: 'Quote',
+    pos: 'pos211',
+    shiftValueEn: '"',
+  },
   {
-   "key": "Enter",
-   "code": "Enter",
-   "pos": "pos212"
-}],
+    key: 'Enter',
+    code: 'Enter',
+    pos: 'pos212',
+  }],
 [
   {
- "key": "Shift",
- "code": "ShiftLeft",
- "pos": "pos30"
-},
+    key: 'Shift',
+    code: 'ShiftLeft',
+    pos: 'pos30',
+  },
   {
-   "key": "z",
-   "code": "KeyZ",
-   "pos": "pos31"
-},
+    key: 'z',
+    keyRu: 'я',
+    code: 'KeyZ',
+    pos: 'pos31',
+  },
   {
-   "key": "x",
-   "code": "KeyX",
-   "pos": "pos32"
-},
+    key: 'x',
+    keyRu: 'ч',
+    code: 'KeyX',
+    pos: 'pos32',
+  },
   {
-   "key": "c",
-   "code": "KeyC",
-   "pos": "pos33"
-},
+    key: 'c',
+    keyRu: 'с',
+    code: 'KeyC',
+    pos: 'pos33',
+  },
   {
-   "key": "v",
-   "code": "KeyV",
-   "pos": "pos34"
-},
+    key: 'v',
+    keyRu: 'м',
+    code: 'KeyV',
+    pos: 'pos34',
+  },
   {
-   "key": "b",
-   "code": "KeyB",
-   "pos": "pos35"
-},
+    key: 'b',
+    keyRu: 'и',
+    code: 'KeyB',
+    pos: 'pos35',
+  },
   {
-   "key": "n",
-   "code": "KeyN",
-   "pos": "pos36"
-},
+    key: 'n',
+    keyRu: 'т',
+    code: 'KeyN',
+    pos: 'pos36',
+  },
   {
-   "key": "m",
-   "code": "KeyM",
-   "pos": "pos37"
-},
+    key: 'm',
+    keyRu: 'ь',
+    code: 'KeyM',
+    pos: 'pos37',
+  },
   {
-   "key": ",",
-   "code": "Comma",
-   "pos": "pos38",
-   "shiftValueEn": "<"
-},
+    key: ',',
+    keyRu: 'б',
+    code: 'Comma',
+    pos: 'pos38',
+    shiftValueEn: '<',
+  },
   {
-   "key": ".",
-   "code": "Period",
-   "pos": "pos39",
-   "shiftValueEn": ">"
-},
+    key: '.',
+    keyRu: 'ю',
+    code: 'Period',
+    pos: 'pos39',
+    shiftValueEn: '>',
+  },
   {
-   "key": "/",
-   "code": "Slash",
-   "pos": "pos310",
-   "shiftValueEn": "?"
-},
+    key: '/',
+    keyRu: '.',
+    code: 'Slash',
+    pos: 'pos310',
+    shiftValueEn: '?',
+    shiftValueRu: ',',
+  },
   {
-   "key": "&#9650",
-   "code": "ArrowUp",
-   "pos": "pos311"
-},
+    key: '&#9650',
+    code: 'ArrowUp',
+    pos: 'pos311',
+  },
   {
-   "key": "Shift",
-   "code": "ShiftRight",
-   "pos": "pos312"
-}],
+    key: 'Shift',
+    code: 'ShiftRight',
+    pos: 'pos312',
+  }],
 [
   {
- "key": "Ctrl",
- "code": "ControlLeft",
- "pos": "pos40"
-},
+    key: 'Ctrl',
+    code: 'ControlLeft',
+    pos: 'pos40',
+  },
   {
-   "key": "Win",
-   "code": "MetaLeft",
-   "pos": "pos41"
-},
+    key: 'Win',
+    code: 'MetaLeft',
+    pos: 'pos41',
+  },
   {
-   "key": "Alt",
-   "code": "AltLeft",
-   "pos": "pos42"
-},
+    key: 'Alt',
+    code: 'AltLeft',
+    pos: 'pos42',
+  },
   {
-   "key": " ",
-   "code": "Space",
-   "pos": "pos43"
-},
+    key: ' ',
+    keyRu: ' ',
+    code: 'Space',
+    pos: 'pos43',
+  },
   {
-   "key": "Alt",
-   "code": "AltRight",
-   "pos": "pos44"
-},
+    key: 'Alt',
+    code: 'AltRight',
+    pos: 'pos44',
+  },
   {
-   "key": "&#9664",
-   "code": "ArrowLeft",
-   "pos": "pos45"
-},
+    key: '&#9664',
+    code: 'ArrowLeft',
+    pos: 'pos45',
+  },
   {
-   "key": "&#9660",
-   "code": "ArrowDown",
-   "pos": "pos46"
-},
+    key: '&#9660',
+    code: 'ArrowDown',
+    pos: 'pos46',
+  },
   {
-   "key": "&#9654",
-   "code": "ArrowRight",
-   "pos": "pos47"
-},
+    key: '&#9654',
+    code: 'ArrowRight',
+    pos: 'pos47',
+  },
   {
-   "key": "Ctrl",
-   "code": "ControlRight",
-   "pos": "pos48"
-}]
-]
+    key: 'Ctrl',
+    code: 'ControlRight',
+    pos: 'pos48',
+  }],
+];
