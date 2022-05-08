@@ -14,15 +14,10 @@ const enterKey = document.querySelector('.Enter');
 const delKey = document.querySelector('.Delete');
 const tabKey = document.querySelector('.Tab');
 const capsLockKey = document.querySelector('.CapsLock');
-// const arrowLeft = document.querySelector('.ArrowLeft');
-// const arrowRight = document.querySelector('.ArrowRight');
 const shiftKeyLeft = document.querySelector('.ShiftLeft');
 const shiftKeyRight = document.querySelector('.ShiftRight');
 const ctrlKeyLeft = document.querySelector('.ControlLeft');
 const altKeyLeft = document.querySelector('.AltLeft');
-
-// const arrowLeft = document.querySelector('.ArrowLeft');
-// const arrowLeft = document.querySelector('.ArrowLeft');
 
 function moveCursorLeft() {
   textArea.focus();
@@ -180,6 +175,26 @@ function translateEn() {
   }
 }
 
+const checkLang = () => {
+  if (lang === 'en') {
+    translateRu();
+  } else {
+    translateEn();
+  }
+};
+
+function checkLangAlt() {
+  if (altKeyLeft.classList.contains('active')) {
+    checkLang();
+  }
+}
+
+function checkLangCtrl() {
+  if (ctrlKeyLeft.classList.contains('active')) {
+    checkLang();
+  }
+}
+
 function addKeyDownInner(event) {
   textArea.focus();
   const activeKey = document.querySelector(`#${event.code}`);
@@ -211,11 +226,7 @@ function addKeyDownInner(event) {
   }
 
   if (altKeyLeft.classList.contains('active') && ctrlKeyLeft.classList.contains('active')) {
-    if (lang === 'en') {
-      translateRu();
-    } else {
-      translateEn();
-    }
+    checkLang();
   }
 
   activeKey.classList.add('animationClick');
@@ -265,8 +276,8 @@ shiftKeyLeft.addEventListener('mousedown', shiftOn);
 shiftKeyLeft.addEventListener('mouseup', shiftOff);
 shiftKeyRight.addEventListener('mousedown', shiftOn);
 shiftKeyRight.addEventListener('mouseup', shiftOff);
-// arrowLeft.addEventListener('click', moveCursorLeft);
-// arrowRight.addEventListener('click', moveCursorRight);
+ctrlKeyLeft.addEventListener('mouseup', checkLangAlt);
+altKeyLeft.addEventListener('mouseup', checkLangCtrl);
 
 // -------------------------------------------------------------- //
 
